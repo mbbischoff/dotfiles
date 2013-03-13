@@ -4,7 +4,7 @@
 
 [core]
 	excludesfile = ~/.gitignore
-	editor = mate
+	editor = mate -w
 	
 [apply]
  	whitespace = nowarn
