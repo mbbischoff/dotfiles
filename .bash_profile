@@ -1,3 +1,7 @@
+### RVM
+
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
 ### Git Bash Completion
 
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
@@ -15,3 +19,5 @@ export GREP_OPTIONS='--color=auto'
 ### Aliases
 
 alias simulator="open /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone\ Simulator.app"
+
+
