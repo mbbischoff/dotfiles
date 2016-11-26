@@ -1,6 +1,7 @@
 ### RVM
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+export GEM_HOME=$HOME/.gem
 
 ### Git Bash Completion
 
