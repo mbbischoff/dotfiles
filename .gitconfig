@@ -1,7 +1,7 @@
 [user]
 	name = Matthew Bischoff
 	email = mb@matthewbischoff.com
-	signingkey = 5092E776
+	signingkey = 29D288A31E6617CAA85EE9E03FEB5FF85092E776
 
 [core]
 	excludesfile = ~/.gitignore
@@ -29,7 +29,7 @@
 	trustExitCode = true
 [mergetool]
 	prompt = false
-	keepBackup = false
+	keepBackup = true
 [color]
 	ui = true
 [difftool "Kaleidoscope"]
