@@ -1,6 +1,7 @@
 [user]
 	name = Matthew Bischoff
 	email = mb@matthewbischoff.com
+	signingkey = 5092E776
 
 [core]
 	excludesfile = ~/.gitignore
@@ -48,3 +49,7 @@
 	smudge = git-lfs smudge -- %f
 	required = true
 	process = git-lfs filter-process
+[commit]
+	gpgsign = true
+[gpg]
+	program = /usr/local/bin/gpg
