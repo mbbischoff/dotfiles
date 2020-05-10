@@ -29,7 +29,7 @@
 	trustExitCode = true
 [mergetool]
 	prompt = false
-	keepBackup = true
+	keepBackup = false
 [color]
 	ui = true
 [difftool "Kaleidoscope"]
