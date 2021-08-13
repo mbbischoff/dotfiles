@@ -1,9 +1,8 @@
-export PATH="/usr/local/sbin:$PATH:$HOME/.rvm/bin:/Users/mb/.gem/ruby/2.6.0/bin"
-
-# Add RVM to PATH for scripting
+export PATH=/opt/homebrew/bin:$PATH
+export EDITOR="/usr/local/bin/mate -w"
 
 alias bepi="bundle exec pod install"
 alias bepru="bundle exec pod repo update"
 alias bepu="bundle exec pod update"
 
-alias purgeallbuilds='rm -rf ~/Library/Developer/Xcode/DerivedData/*'
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
