@@ -82,4 +82,15 @@ then
   compinit
 fi
 
-eval "$(/opt/homebrew/bin/brew shellenv)"
+AMPLI_AC_ZSH_SETUP_PATH=/Users/mb/Library/Caches/@amplitude/ampli/autocomplete/zsh_setup && test -f $AMPLI_AC_ZSH_SETUP_PATH && source $AMPLI_AC_ZSH_SETUP_PATH; # ampli autocomplete setupeval 
+export PATH="$HOME/rubyonmac:$PATH"
+
+eval "$(nodenv init -)"
+
+source "$(brew --prefix)/opt/chruby/share/chruby/chruby.sh"
+
+source "$(brew --prefix)/opt/chruby/share/chruby/auto.sh"
+
+chruby ruby-3.2.3
+
+nodenv global 20.11.1

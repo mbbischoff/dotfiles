@@ -1,7 +1,7 @@
 [user]
-	name = Matthew Bischoff
-	email = mb@matthewbischoff.com
-	signingkey = 29D288A31E6617CAA85EE9E03FEB5FF85092E776
+	name = mb bischoff
+	email = mb@mbbischoff.com
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJVrmv/OzFTjgGD0CIZgUab0+WUs0j6WpL11HGeTRuIb
 
 [core]
 	excludesfile = ~/.gitignore
@@ -13,8 +13,6 @@
 [push]
 	default = current
 	
-[credential]
-	  helper = osxkeychain
 [alias]
     co = checkout
     rh = reset --hard
@@ -22,25 +20,32 @@
 	
 [mergetool]
 	keepBackup = false
+	
 [color]
 	ui = true
+	
 [filter "media"]
 	required = true
 	clean = git media clean %f
 	smudge = git media smudge %f
+	
 [filter "hawser"]
 	clean = git hawser clean %f
 	smudge = git hawser smudge %f
 	required = true
+	
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	required = true
 	process = git-lfs filter-process
+	
 [commit]
 	gpgsign = true
 [gpg]
-	program = /usr/local/MacGPG2/bin/gpg
+	format = ssh
+[gpg "ssh"]
+	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
 [difftool "Kaleidoscope"]
 	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 [mergetool "Kaleidoscope"]
