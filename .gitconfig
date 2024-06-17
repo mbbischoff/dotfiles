@@ -2,7 +2,6 @@
 	name = mb bischoff
 	email = mb@mbbischoff.com
 	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJVrmv/OzFTjgGD0CIZgUab0+WUs0j6WpL11HGeTRuIb
-
 [core]
 	excludesfile = ~/.gitignore
 	editor = mate -w
@@ -42,12 +41,13 @@
 	
 [commit]
 	gpgsign = true
+	
 [gpg]
-	format = ssh
+    format = ssh
+	
 [gpg "ssh"]
-	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
-[difftool "Kaleidoscope"]
-	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+    program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+	
 [mergetool "Kaleidoscope"]
 	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
 	trustExitCode = true
